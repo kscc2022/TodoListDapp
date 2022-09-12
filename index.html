@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv="Cache-Control" content="no-store">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script type="text/javascript" src="./index.js?version=1"></script>
+    <link href='index.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <h1>Todo List <span id="version">v.0.0.0</span></h1>
+
+    <h2>CONNECT WALLET</h2>
+      <button id="connect_button" onclick="connectWallet()">CONNECT</button>
+      <span id="account_address"></span>
+    <h2>CREATE NEW TODO</h2>
+    <div>
+      <input type="text" id="create_todo_input" placeholder="Write a Todo">
+      <button onclick="createTodo()">CREATE</button>
+    </div>
+
+    <h2>TASKS</h2>
+    <div id="todo_list"></div>
+
+    <h2>LOG</h2>
+    <div id="status_message"></div>
+
+  </body>
+</html>
